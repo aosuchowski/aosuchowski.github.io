@@ -1,5 +1,5 @@
-Here you can say lots of fun things about your site.
+...just as Kramer said to Woody Allen.
 
-Maybe say some things about yourself.
+Hi, I'm Alex, welcome to my blog page. If you got here, I'm not sure how.
 
-Or maybe what you plan to blog about.
+I have created this blog just as a curiosity. I thought it would be nice to have a place to jot things down that I find interesting or want to remember. At this stage, I can't promise it will be interesting or useful for anyone else besides me.
