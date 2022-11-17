@@ -10,6 +10,6 @@ Here is a random code block (just to see how it works):
  WHERE [name] = 'SomeTable'
  ```
  
-And here is some random `inline code` <-- this was created by surrounding the term "inline code" with back-ticks. I don't think I have ever used a back-tick in my life up until now. I had to search my laptop keyboard to find it, and when I did, cool!
+And here is some random `inline code` <-- this was created by surrounding the term "inline code" with back-ticks. I don't think I have ever used a back-tick in my life up until now. I had to search my laptop keyboard to find it, and when I did (with the help of a post on Stack Exchange's superuser site), hey cool!
 
 I'm looking forward to learning more about Markdown and Jekyll by having this blog on Github Pages. I'm not really sure if I will end up actually blogging a lot, but we shall see! It's fun to learn how to do it at the very least.
