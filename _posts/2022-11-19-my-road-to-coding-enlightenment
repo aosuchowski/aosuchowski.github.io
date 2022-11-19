@@ -10,9 +10,7 @@ I started my Masters degree in 2016, and again heavily used Excel for most of my
 
 I started my PhD in 2019. I was determined to learn Python so signed up for Charles Severance's Python for Everybody course on Coursera. This course was well-structured and interesting, I worked my way through the quizzes and assignments, but I still didn't quite get how to connect the things and apply them in my PhD work, once you start making these connections and think that's when things really start taking off.
 
-Next I started spending some time at a consulting firm whose work is quantitative interpretation of geophysical (seismic) data.  
-
-Agile Scientific blog, Software Underground
+Next I started spending some time at a consulting firm whose work is in the field of quantitative interpretation of geophysical (seismic) data. The computing environment was unlike any I had experienced in a work setting previously. We used remote connection to access the company server, I learned how to use a Linux command prompt to access directories, move files, etc. All data analysis was done through running Python scripts, text editor was Emacs. This opened my eyes to a new world. A friend in the office sent me a link to Agile Scientific's blog, as I was trying to understand some basic seismic geophysics concepts (such as phase of a seismic signal). This blog and its authors are amazing. I read, or at least browsed, nearly every blog post dating back to November 2010. Along with the blogs there are some great tutorials showing how to do various data analysis tasks in Python. The Software Underground community is awesome, the Transform online conference tutorials on YouTube are awesome.
 
 StackOverflow, if there are 1 or 2 upvotes you are most likely doing something the wrong way, Google-fu
 
