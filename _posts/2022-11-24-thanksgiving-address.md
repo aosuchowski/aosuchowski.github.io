@@ -1,6 +1,6 @@
 ## Thanksgiving address
 
-John Stokes and Kanawahienton, 1993
+John Stokes and Kanawahienton, 1993  
 From the book Braiding Sweetgrass by Robin Wall Kimmerer
 
 Today we have gathered and when we look upon the faces around us we see that the cycles of life continue. We have been given the duty to live in balance and harmony with each other and all living things. So now let us bring our minds together as one as we give greetings and thanks to each other as People. Now our minds are one.
