@@ -21,6 +21,22 @@ Now we turn to the Medicine Herbs of the world. From the beginning they were ins
 
 Standing around us we see all the Trees. The Earth has many families of Trees who each have their own instructions and uses. Some provide shelter and shade, others fruit and beauty and many useful gifts. The Maple is the leader of the Trees, to recognize its gift of sugar when the People need it most. Many peoples of the world recognize a Tree as a symbol of peace and strength. With one mind we greet and thank the Tree life. Now our minds are one.
 
-...
+We gather our minds together to send our greetings and thanks to all the beautiful animal life of the world, who walk about with us. They have many things to teach us as people. We are grateful that they continue to share their lives with us and hope that it will always be so. Let us put our minds together as one and send our thanks to the Animals. Now our minds are one.
+
+We put our minds together as one and thank all the birds who move and fly about over our heads. The Creator gave them the gift of beautiful songs. Each morning they greet the day and with their songs remind us to enjoy and appreciate life. The Eagle was chosen to be their leader and to watch over the world. To all the Birds, from the smallest to the largest, we send our joyful greetings and thanks. Now our minds are one.
+
+We are thankful for the powers we know as the Four Winds. We hear their voices in the moving air as they refresh us and purify the air we breathe. They help to bring the change of seasons. From the four directions they come, bringing us messages and giving us strength. With one mind we send our greetings and thanks to the Four Winds. Now our minds are one.
+
+Now we turn to the west where our grandfathers the Thunder Beings live. With lightning and thundering voices they bring with them the water that renews life. We bring our minds together as one to send greetings and thanks to our Grandfathers, the Thunderers.
+
+We now send greetings and thanks to our eldest brother the Sun. Each day without fail he travels the sky from east to west, bringing the light of a new day. He is the source of all the fires of life. With one mind, we send greetings and thanks to our Brother, the Sun. Now our minds are one.
+
+We put our minds together and give thanks to our oldest Grandmother, the Moon, who lights the nighttime sky. She is the leader of women all over the world and she governs the movement of the ocean tides. By her changing face we measure time and it is the Moon who watches over the arrival of children here on Earth. Let us gather our thanks for Grandmother Moon together in a pile, layer upon layer of gratitude, and then joyfully fling that pile of thanks high into the night sky that she will know. With one mind, we send greetings and thanks to our Grandmother, the Moon.
+
+We give thanks to the Stars who are spread across the sky like jewelry. We see them at night, helping the Moon to light the darkness and bringing dew to the gardens and growing things. When we travel at night, they guide us home. With our minds gathered as one, we send greetings and thanks to all the Stars. Now our minds are one.
+
+We gather our minds to greet and thank the enlightened Teachers who have come to help throughout the ages. When we forget how to live in harmony, they remind us of the way we were instructed to live as people. With one mind, we send greetings and thanks to these caring Teachers. Now our minds are one.
+
+We now turn our thoughts to the Creator, or Great Spirit, and send greetings and thanks for all the gifts of Creation. Everything we need to live a good life is here on Mother Earth. For all the love that is still around us, we gather our minds together as one and send our choicest words of greetings and thanks to the Creator. Now our minds are one.
 
 We have now arrived at the place where we ends our words. Of all the things we have named, it is not our intention to leave anything out. If something was forgotten, we leave it to each individual to send such greetings and thanks in their own way. And now our minds are one.
