@@ -1,0 +1,107 @@
+:root {
+    --text-color: #000000;
+    --background-color: #f8f9fa;
+    --accent-color: #3498db;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Consolas', monospace;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+main {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    margin: 4rem 0;
+    text-align: left;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.about {
+    margin: 2rem 0;
+    font-size: 1.1rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.links a {
+    color: var(--accent-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.links a:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.navigation {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.navigation a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+}
+
+ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.date {
+    font-family: 'Consolas', monospace;
+    margin-right: 1rem;
+}
+
+.posts li {
+    /* display: flex; */
+    align-items: left;
+} 
