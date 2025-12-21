@@ -7,6 +7,8 @@
 body {
     margin: 0;
     padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-family: 'Consolas', monospace;
     line-height: 1.6;
     color: var(--text-color);
@@ -14,15 +16,16 @@ body {
 }
 
 main {
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 2rem;
+    margin: 0;          /* remove automatic horizontal centering */
+    padding: 1rem 1rem 1rem 1rem; 
 }
 
+
 header {
-    margin: 4rem 0;
+    margin: 1rem 0;     /* was 4rem 0 */
     text-align: left;
 }
+
 
 h1 {
     margin: 0;
