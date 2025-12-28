@@ -97,5 +97,15 @@
       </p>
     </section>
   </main>
+  <script>
+  const el = document.getElementById("last-updated");
+  const d = new Date(document.lastModified);
+
+  el.textContent = d.toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
+ </script>
 </body>
 </html>
