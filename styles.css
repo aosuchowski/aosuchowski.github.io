@@ -106,24 +106,24 @@ li {
 }
 
 .posts li {
-    /* display: flex; */
     align-items: left;
 } 
 
 .quotes .quote {
+  margin-top: 5rem;
   margin-bottom: 2.25rem;  
-  line-height: 1.65;
+  line-height: 1.5;
 }
 
 .quotes .author {
   display: block;
-  margin-top: 0.5rem;       
+  margin-top: 0.5rem;  
+  /* margin-bottom: 3rem;      */
   font-style: normal;
   opacity: 0.65;
 }
 
 .quotes .date {
   margin-top: 3.5rem;
-  font-size: 0.9rem;
-  opacity: 0.6;
+  opacity: 0.65;
 }
