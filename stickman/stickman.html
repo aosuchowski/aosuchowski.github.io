@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Perimeter Stickman (Feet on Edge, Head Inward)</title>
+<style>
+  html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  /* The sprite box (JS sets width/height) */
+  #stickman {
+    position: absolute;
+    pointer-events: none;
+    /* JS sets transform-origin to the feet anchor */
+  }
+
+  #stickman svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  /* Swing animations (applied inside the SVG groups) */
+  .arm-swing {
+    transform-origin: var(--ox) var(--oy);
+    animation: armSwing 0.6s infinite alternate ease-in-out;
+  }
+  .arm-swing.delay { animation-delay: 0.3s; }
+
+  .leg-swing {
+    transform-origin: var(--ox) var(--oy);
+    animation: legSwing 0.6s infinite alternate ease-in-out;
+  }
+  .leg-swing.delay { animation-delay: 0.3s; }
+
+  @keyframes armSwing {
+    from { transform: rotate(-25deg); }
+    to   { transform: rotate(25deg); }
+  }
+  @keyframes legSwing {
+    from { transform: rotate(25deg); }
+    to   { transform: rotate(-25deg); }
+  }
+</style>
+</head>
+<body>
+
+<div id="stickman" aria-hidden="true">
+  <svg viewBox="0 0 100 100">
+    <!-- Head -->
+    <circle cx="50" cy="18" r="10" fill="#000" />
+
+    <!-- Torso -->
+    <line x1="50" y1="30" x2="50" y2="58"
+          stroke="#000" stroke-width="14"
+          stroke-linecap="round" />
+
+    <!-- Arms (swing around shoulder near (50,36)) -->
+    <g class="arm-swing" style="--ox:50px; --oy:36px;">
+      <line x1="50" y1="36" x2="30" y2="52"
+            stroke="#000" stroke-width="14"
+            stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <g class="arm-swing delay" style="--ox:50px; --oy:36px;">
+      <line x1="50" y1="36" x2="70" y2="54"
+            stroke="#000" stroke-width="14"
+            stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- Legs (swing around hip near (50,58)) -->
+    <g class="leg-swing" style="--ox:50px; --oy:58px;">
+      <line x1="50" y1="58" x2="38" y2="88"
+            stroke="#000" stroke-width="14"
+            stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <g class="leg-swing delay" style="--ox:50px; --oy:58px;">
+      <line x1="50" y1="58" x2="66" y2="86"
+            stroke="#000" stroke-width="14"
+            stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+  </svg>
+</div>
+
+<script>
+  const stickman = document.getElementById("stickman");
+
+  // Visual size
+  const SPRITE_W = 90;
+  const SPRITE_H = 90;
+
+  // Feet anchor inside the sprite box (bottom-center, slightly above the box bottom)
+  // (SVG legs end ~y=88 in viewBox=100, so use ~0.88 of height)
+  const ANCHOR_X = SPRITE_W * 0.5;
+  const ANCHOR_Y = SPRITE_H * 0.88;
+
+  stickman.style.width = `${SPRITE_W}px`;
+  stickman.style.height = `${SPRITE_H}px`;
+  stickman.style.transformOrigin = `${ANCHOR_X}px ${ANCHOR_Y}px`;
+
+  // Motion
+  let speed = 140; // px/s along perimeter
+  let s = 0;
+  let last = null;
+
+  function perimeter() {
+    return 2 * (window.innerWidth + window.innerHeight);
+  }
+
+  // Map distance along perimeter to a point on the edge + an "inward facing" angle
+  function edgePose(s) {
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+
+    // Clamp usable range so the anchor can still sit exactly on the edge
+    // (optional: keep full range; anchor can go fully to corners)
+    if (s < w) {
+      // Top edge: move left->right, feet on y=0, head inward (down) => rotate 180
+      return { x: s, y: 0, angle: 180 };
+    } else if (s < w + h) {
+      // Right edge: move top->bottom, feet on x=w, head inward (left) => rotate 270
+      return { x: w, y: s - w, angle: 270 };
+    } else if (s < 2 * w + h) {
+      // Bottom edge: move right->left, feet on y=h, head inward (up) => rotate 0
+      return { x: w - (s - (w + h)), y: h, angle: 0 };
+    } else {
+      // Left edge: move bottom->top, feet on x=0, head inward (right) => rotate 90
+      return { x: 0, y: h - (s - (2 * w + h)), angle: 90 };
+    }
+  }
+
+  function step(dt) {
+    const P = perimeter();
+    s = (s + speed * dt) % P;
+
+    const { x, y, angle } = edgePose(s);
+
+    // Place the sprite so that the feet anchor lies exactly on the edge point (x,y)
+    stickman.style.left = `${x - ANCHOR_X}px`;
+    stickman.style.top  = `${y - ANCHOR_Y}px`;
+
+    // Rotate so head points toward the screen interior on each edge
+    stickman.style.transform = `rotate(${angle}deg)`;
+  }
+
+  function loop(t) {
+    if (last === null) last = t;
+    const dt = (t - last) / 1000;
+    last = t;
+
+    step(dt);
+    requestAnimationFrame(loop);
+  }
+
+  requestAnimationFrame(loop);
+
+  window.addEventListener("resize", () => {
+    s = s % perimeter();
+  });
+</script>
+</body>
+</html>
