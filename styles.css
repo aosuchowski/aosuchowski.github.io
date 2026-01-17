@@ -9,7 +9,7 @@ body {
     padding: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-family: 'Consolas', monospace;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -100,7 +100,7 @@ li {
 }
 
 .date {
-    font-family: 'Consolas', monospace;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     color: #808080;
     margin-right: 1rem;
 }
@@ -120,7 +120,6 @@ li {
   margin-top: 0.5rem;  
   /* margin-bottom: 3rem;      */
   font-style: normal;
-  opacity: 0.65;
 }
 
 .quotes .date {
